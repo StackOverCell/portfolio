@@ -1,0 +1,354 @@
+
+    /* Estilo Geral */
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+}
+
+body{
+    background-color:rgb(170, 158, 158);
+    height: 100vh;
+    /* Fundo do Site */
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* Estilo do Cabeçalho */
+header{
+    padding: 25px 4%;
+    background-color: rgb(167, 147, 147);
+    width: 100%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    padding: 20px 0;
+    background-color: rgb(121, 111, 121);
+}
+/* Estilo Pag. Principal */
+section.topo-do-site{
+    padding: 120px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 45px;
+    line-height: 60px;
+}
+
+.topo-do-site h2{
+    color: #fff;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #00ff08;
+}
+
+.topo-do-site .txt-topo-site h2 span{
+    color: #e99393;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* Estilo Sobre */
+
+section.topo-do-sobre{
+    padding: 120px 4%;
+}
+
+section.topo-do-sobre .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-sobre h1{
+    color: #fff;
+    font-size: 45px;
+    line-height: 60px;
+}
+
+.topo-do-sobre h2{
+    color: #fff;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.topo-do-sobre .txt-topo-sobre h1{
+    color: #00ff08;
+}
+
+.topo-do-sobre .txt-topo-sobre p{
+    color: #fff;
+    margin: 40px 0;
+    line-height: 30px;
+}
+
+.topo-do-sobre .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* Formulario Contato */
+
+section.Contato{
+    padding: 80px 4%;
+    h2.titulo{
+        color: #fff;
+        font-size: 37px;
+        text-align: center;
+    }
+    h2.titulo span{
+        color: #00FF08;
+    }
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgb(196, 195, 195);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #000000;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: vertical;
+    white-space: pre-wrap;
+    max-height: 250px;
+    min-height: 70px;
+    height: 150px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #00FF08;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover, form .btn-enviar input:hover{
+    transform: scale(1.05);
+}
+
+/* Formulario Especialidades */
+
+section.Especialidades{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    padding: 35px 10%;
+}
+
+.col header.educar{
+    font-family: helvetica;
+    color: #00FF08;
+    padding: 0px 0px 20px 30px;
+    background-color: rgb(170, 158, 158)
+}
+
+main.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.col .contents{
+    padding: 0px 30px;
+    border-left: 2px solid #bababa;
+}
+
+.col .contents .box{
+    position: relative;
+    padding: 20px;
+    border: 1px solid #dd7e7e;
+    background-color: #d8d4d4;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.col .contents .box:hover{
+    box-shadow: 0px 3px 12px 0px #8a3939;
+    border: 1px solid transparent;
+}
+
+.col .contents .box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #00FF08;
+    border: 2px solid white;
+}
+
+/* Estilo Projetos */
+
+section.projeto{
+    padding: 80px 4%;
+    h2.titulo{
+        color: #fff;
+        font-size: 37px;
+        text-align: center;
+    }
+    h2.titulo span{
+        color: #00FF08;
+    }
+}
+
+section.projeto .flex{
+    gap: 60px;
+}
+
+.projeto .projeto-box{
+    color: #000000;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+
+}
+
+.projeto .projeto-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #4b1e1e;
+}
+
+.projeto .projeto-box i{
+    font-size: 70px;
+    color: #00FF08;
+}
+
+.projeto .projeto-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.projeto .btn-download button{
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #abf1ae;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 40px;
+    vertical-align: middle;
+}
+
+.projeto .btn-download button:hover{
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+}
